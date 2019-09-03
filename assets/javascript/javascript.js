@@ -1,18 +1,22 @@
 var wins =0;
 var losses = 0;
 var gemcount =0;
-var computerGuess = Math.floor(Math.random()* 101);
-var gem1 =Math.floor(Math.random()*16)
-var gem2 =Math.floor(Math.random()*16)
-var gem3 =Math.floor(Math.random()*16)
-var gem4 =Math.floor(Math.random()*16)
+var computerGuess = getRandomInt
+var gem1 =Math.floor(Math.random()*13)
+var gem2 =Math.floor(Math.random()*13)
+var gem3 =Math.floor(Math.random()*13)
+var gem4 =Math.floor(Math.random()*13)
 // $('#reachme').HTML=computerGuess;
 // $('#gem1').HTML=gem1;
 // $('#gem2').HTML=gem2;
 // $('#gem3').HTML=gem3;
 // $('#gem4').HTML=gem4;
 
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (121- 20)) + 20; //The maximum is exclusive and the minimum is inclusive
+  }
 function update(){
    
     $( "#wins").html(wins);
