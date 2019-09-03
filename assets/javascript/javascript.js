@@ -6,11 +6,7 @@ var gem1 =Math.floor(Math.random()*13)
 var gem2 =Math.floor(Math.random()*13)
 var gem3 =Math.floor(Math.random()*13)
 var gem4 =Math.floor(Math.random()*13)
-// $('#reachme').HTML=computerGuess;
-// $('#gem1').HTML=gem1;
-// $('#gem2').HTML=gem2;
-// $('#gem3').HTML=gem3;
-// $('#gem4').HTML=gem4;
+
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -28,23 +24,24 @@ function update(){
     $( '#gem4').html(gem4)
     $( '#gemcounter').html(gemcount)
 }
-// add the value of gem to the gemcount var 
-// function mycheck(){
-//     $('#gem1').click(++gemcount);
-
-// };
-
-
+function checkclick(){
+    $('#gem1').on('click',function() {
+        alert('crystal 1'+""+gem1);
+        gemcount += gem1;
+        update();
+    
+    }
+    )}
+    
 if(gemcount== computerGuess){
     wins++;
     alert('you have won'+wins+'times');
-    // update();
+    update();
 }
-// else (gemcount==computerGuess)
-//     losses ++;
-//     alert('You went to high, you lose');
-//     update();
-
+else if (gemcount>computerGuess){
+    losses ++;
+    alert('You went to high, you lose');
+    update();}
     
 
 update();
