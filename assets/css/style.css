@@ -47,10 +47,22 @@
     text-align: center;
   }
 #scorecard{
-  float: right;
-  margin-right: 33%;
-  background: white;
-  padding: 20px;
+  float:right;
+  margin-right: 73%;
+  background: aquamarine;
+  padding: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 125%
+}
+#reach{
+  /* margin-left: 5px; */
+  margin-right: 80%;
+  background: #4aaaa5;
+  padding: 25px;
+  color: white;
+  font-size: 170%;
+  
+
 }
   
   nav {
@@ -66,6 +78,29 @@
     color: #999;
     text-decoration: none;
     border-left: 1px solid #efefef;
+  }
+
+  #userscorecard{background:#4aaaa5;
+    color: #ffffff;
+    width: 20%;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+   
+  }
+  #userscore{ background: #4aaaa5;
+    color: #ffffff;
+    width: 20%;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 52px;
+    margin-left: 5px;
+    margin-bottom: 5%;
+    
   }
 #gem1{
     width: 100px;

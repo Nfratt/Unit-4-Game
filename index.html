@@ -34,14 +34,29 @@
             <p>Each time when the games starts,the game will change the values of each crystal.</p>
         </div>
         <div id="scorecard">
-        <p id="wins">Wins: </p>
-        <p id="losses">losses: </p>
+            <p>Wins:
+                <span id="wins"></span>
+            </p>
+            <p>losses:
+                <span id="losses"></span>
+            </p>
+        </div>
+        <div id=reach>Reachme:
+            <span id="reachme"></span>
         </div>
         <br>
-        <img src="assets/images/bolderbadge.png" class="gem1"  id="gem1">
-        <img src="assets/images/cascadebadge.png" class="gem2" id="gem2">
-        <img src="assets/images/ThunderBadge.png" class="gem3" id="gem3">
-        <img src="assets/images/volcanobadge.png" class="gem4" id="gem4">
+        <img src="assets/images/bolderbadge.png" class="gem" id="gem1" onclick="alert(gem1)">
+        <img src="assets/images/cascadebadge.png" class="gem" id="gem2" onclick="alert(gem2)">
+        <img src="assets/images/ThunderBadge.png" class="gem" id="gem3" onclick="alert(gem3)">
+        <img src="assets/images/volcanobadge.png" class="gem" id="gem4" onclick="alert(gem4)">
+    </div>
+    <div id="userscorecard">
+        <p>Your total score is:</p>
+    </div>
+    <br>
+    <div id='userscore'>
+        <span id="gemcounter"></span>
+    </div>
     </div>
     <footer>
         <div class="container">
@@ -50,7 +65,9 @@
             Copyright &copy;
         </div>
     </footer>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
 </body>
 
 </html>
